@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "title": "Running Shoes",
+    "imageUrl": "https://picsum.photos/400?1"
+  },
+  {
+    "id": "2",
+    "title": "Leather Wallet",
+    "imageUrl": "https://picsum.photos/400?2"
+  },
+  {
+    "id": "3",
+    "title": "Smart Watch",
+    "imageUrl": "https://picsum.photos/400?3"
+  },
+  {
+    "id": "4",
+    "title": "Noise Cancelling Headphones",
+    "imageUrl": "https://picsum.photos/400?4"
+  }
+]
+
+
