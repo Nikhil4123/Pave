@@ -17,7 +17,7 @@ A Flutter app that displays products in a grid layout with favorites functionali
    flutter run
    ```
 
-The app attempts to fetch products from `https://mock.pavepilot.dev/products`. **Note: This API endpoint is currently unavailable**, so the app automatically uses the local JSON fallback file (`assets/products_fallback.json`) which contains 16 sample products.
+The app fetches products from `https://fakestoreapi.com/products`. If the API is unavailable, it automatically falls back to a local JSON file (`assets/products_fallback.json`) which contains 16 sample products.
 
 ## Screenshots
 

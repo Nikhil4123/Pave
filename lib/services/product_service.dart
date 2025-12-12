@@ -10,12 +10,11 @@ class ProductService {
   ProductService({http.Client? client}) : _client = client ?? http.Client();
 
   final http.Client _client;
-  static const _endpoint = 'https://mock.pavepilot.dev/products';
+  static const _endpoint = 'https://fakestoreapi.com/products';
   static const _fallbackAssetPath = 'assets/products_fallback.json';
 
   Future<List<Product>> fetchProducts() async {
     debugPrint('🌐 [ProductService] Fetching products from API: $_endpoint');
-    debugPrint('ℹ️ [ProductService] Note: API endpoint may be unavailable, will use fallback if needed');
     try {
       final response = await _client
           .get(Uri.parse(_endpoint))
