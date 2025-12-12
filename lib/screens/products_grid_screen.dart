@@ -5,6 +5,7 @@ import '../models/product.dart';
 import '../providers/favorites_provider.dart';
 import '../providers/products_provider.dart';
 import '../widgets/product_card.dart';
+import 'favorites_screen.dart';
 import 'product_detail_screen.dart';
 
 class ProductsGridScreen extends StatefulWidget {
@@ -43,6 +44,58 @@ class _ProductsGridScreenState extends State<ProductsGridScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Products'),
+        actions: [
+          Consumer<FavoritesProvider>(
+            builder: (context, favorites, _) {
+              final favoriteCount = favorites.favoriteIds.length;
+              debugPrint('❤️ [ProductsGridScreen] AppBar - Favorite count: $favoriteCount');
+              return Stack(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.favorite),
+                    tooltip: 'View Favorites',
+                    onPressed: () {
+                      debugPrint('❤️ [ProductsGridScreen] Favorites button pressed, navigating to FavoritesScreen');
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) {
+                            debugPrint('📄 [ProductsGridScreen] FavoritesScreen created');
+                            return const FavoritesScreen();
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  if (favoriteCount > 0)
+                    Positioned(
+                      right: 8,
+                      top: 8,
+                      child: Container(
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          shape: BoxShape.circle,
+                        ),
+                        constraints: const BoxConstraints(
+                          minWidth: 16,
+                          minHeight: 16,
+                        ),
+                        child: Text(
+                          favoriteCount > 9 ? '9+' : favoriteCount.toString(),
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                ],
+              );
+            },
+          ),
+        ],
       ),
       body: Consumer2<ProductsProvider, FavoritesProvider>(
         builder: (context, products, favorites, _) {
