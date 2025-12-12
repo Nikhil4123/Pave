@@ -18,7 +18,65 @@
     "id": "4",
     "title": "Noise Cancelling Headphones",
     "imageUrl": "https://picsum.photos/400?4"
+  },
+  {
+    "id": "5",
+    "title": "Wireless Mouse",
+    "imageUrl": "https://picsum.photos/400?5"
+  },
+  {
+    "id": "6",
+    "title": "Mechanical Keyboard",
+    "imageUrl": "https://picsum.photos/400?6"
+  },
+  {
+    "id": "7",
+    "title": "Laptop Stand",
+    "imageUrl": "https://picsum.photos/400?7"
+  },
+  {
+    "id": "8",
+    "title": "USB-C Hub",
+    "imageUrl": "https://picsum.photos/400?8"
+  },
+  {
+    "id": "9",
+    "title": "Portable Charger",
+    "imageUrl": "https://picsum.photos/400?9"
+  },
+  {
+    "id": "10",
+    "title": "Bluetooth Speaker",
+    "imageUrl": "https://picsum.photos/400?10"
+  },
+  {
+    "id": "11",
+    "title": "Camera Lens",
+    "imageUrl": "https://picsum.photos/400?11"
+  },
+  {
+    "id": "12",
+    "title": "Tripod Stand",
+    "imageUrl": "https://picsum.photos/400?12"
+  },
+  {
+    "id": "13",
+    "title": "Backpack",
+    "imageUrl": "https://picsum.photos/400?13"
+  },
+  {
+    "id": "14",
+    "title": "Water Bottle",
+    "imageUrl": "https://picsum.photos/400?14"
+  },
+  {
+    "id": "15",
+    "title": "Fitness Tracker",
+    "imageUrl": "https://picsum.photos/400?15"
+  },
+  {
+    "id": "16",
+    "title": "Gaming Controller",
+    "imageUrl": "https://picsum.photos/400?16"
   }
 ]
-
-

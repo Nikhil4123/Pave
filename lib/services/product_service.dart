@@ -15,8 +15,11 @@ class ProductService {
 
   Future<List<Product>> fetchProducts() async {
     debugPrint('🌐 [ProductService] Fetching products from API: $_endpoint');
+    debugPrint('ℹ️ [ProductService] Note: API endpoint may be unavailable, will use fallback if needed');
     try {
-      final response = await _client.get(Uri.parse(_endpoint));
+      final response = await _client
+          .get(Uri.parse(_endpoint))
+          .timeout(const Duration(seconds: 10));
       debugPrint('📡 [ProductService] API response status: ${response.statusCode}');
       if (response.statusCode == 200) {
         final body = jsonDecode(response.body) as List<dynamic>;
