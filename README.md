@@ -22,9 +22,10 @@ The app fetches products from `https://fakestoreapi.com/products`. If the API is
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/home_screen.jpg" alt="Home Screen" width="220" />
-  <img src="screenshots/product_detail.jpg" alt="Product Detail" width="220" />
-  <img src="screenshots/favorites.jpg" alt="Favorites" width="220" />
+  <img src="screenshots/home_screen.jpg" alt="Home Screen" width="200" />
+  <img src="screenshots/product_detail.jpg" alt="Product Detail" width="200" />
+  <img src="screenshots/favorites.jpg" alt="Favorites" width="200" />
+  <img src="screenshots/fallback_loaded.jpg" alt="Fallback Loaded" width="200" />
 </p>
 
 ## Architecture
